@@ -20,11 +20,21 @@ int accChar(va_list *vl)
 	return (_putchar(va_arg(*vl, int)));
 }
 
+/**
+ * accInt - return arguments to the list
+ * @vl: variadic list
+ * Return: value in the list
+ */
 int accInt(va_list *vl)
 {
 	return (print_int(va_arg(*vl, int)));
 }
 
+/**
+ * accPercent - return arguments to the list
+ * @vl: variadic list
+ * Return: value in the list
+ */
 int accPercent(va_list *vl)
 {
 	(void) vl;

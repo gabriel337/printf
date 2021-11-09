@@ -9,7 +9,7 @@ int _printf(const char *format, ...)
 {
 	unsigned int i, result = 0;
 	va_list vl;
-	
+
 	if (format == NULL)
 		return (-1);
 

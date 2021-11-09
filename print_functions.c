@@ -8,7 +8,7 @@
 int print_string(char *str)
 {
 	unsigned int i;
-	
+
 	if (str == NULL)
 		str = "(null)";
 
@@ -30,9 +30,9 @@ int _putchar(char c)
 }
 
 /**
- *print_init - prints numbers
- @num: number to be printed
- *Return: num
+ * print_int - prints numbers
+ * @num: number to be printed
+ * Return: num
  */
 int print_int(int num)
 {
@@ -46,7 +46,7 @@ int print_int(int num)
 		num = -num;
 	}
 	i = num;
-	
+
 	if (i > 9)
 	{
 		count += print_int(i / 10);
