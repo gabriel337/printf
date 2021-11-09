@@ -55,19 +55,27 @@ int print_int(int num)
 	return (count);
 }
 
+/**
+ * print_revstring - prints reverse string
+ * @str - string passed
+ * Return: returns j
+ *
+ */
 int print_revstring(char *str)
 {
-int i, j, reverse = 0;
-
-for (i = 0; str[i] != '\0'; i++)
-{
-	reverse++;
-}
-
-for (j = (reverse - 1); j >= 0; j--)
-{
-	_putchar(str[j]);
-}
-
-return (str);
+	int i, j, reverse = 0;
+	
+	if (str == NULL)
+		return (-1);
+	
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		reverse++;
+	}
+	
+	for (j = (reverse - 1); j >= 0; j--)
+	{
+		_putchar(str[j]);
+	}
+	return (j);
 }
