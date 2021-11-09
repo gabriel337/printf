@@ -54,3 +54,21 @@ int print_int(int num)
 	_putchar(i % 10 + '0');
 	return (count);
 }
+
+int print_revstring(char *str)
+{
+int i, j, reverse = 0;
+
+for (i = 0; str[i] != '\0'; i++)
+{
+	reverse++;
+}
+
+for (j = (reverse - 1); j >= 0; j--)
+{
+	_putchar(str[j]);
+}
+
+return (j);
+
+}
