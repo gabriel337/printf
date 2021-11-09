@@ -9,8 +9,14 @@ int _printf(const char *format, ...)
 {
 	unsigned int i, result = 0;
 	va_list vl;
+	
+	if (format == NULL)
+		return (-1);
 
 	va_start(vl, format); /* pointing to format */
+
+	if (vl == NULL)
+		return (-1);
 
 	for (i = 0; format[i] != '\0'; i++)
 	{
