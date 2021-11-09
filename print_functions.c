@@ -69,6 +69,5 @@ for (j = (reverse - 1); j >= 0; j--)
 	_putchar(str[j]);
 }
 
-return (j);
-
+return (str);
 }
