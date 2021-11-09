@@ -33,18 +33,21 @@ int _putchar(char c)
  */
 int print_int(int num)
 {
-	int i = 1;
+	int count = 1;
+	unsigned int i;
 
 	if (num < 0)
 	{
 		_putchar('-');
-		i++;
+		count++;
 		num = -num;
 	}
-	if (num > 9)
+	i = num;
+	
+	if (i > 9)
 	{
-		i += print_int(num / 10);
+		count += print_int(i / 10);
 	}
-	_putchar(num % 10 + '0');
-	return (i);
+	_putchar(i % 10 + '0');
+	return (count);
 }
