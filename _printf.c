@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%') /*if i is the same as % then verify the next char and call the function*/
 		{
-			result += get_print(format[i + 1], &ap);
+			result += get_print(format[i + 1], &vl);
 			i++;
 		}
 		else /*if not then print each char (string)*/
