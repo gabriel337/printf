@@ -14,7 +14,9 @@ int _printf(const char *format, ...)
 
 	for (i = 0; format[i] != '\0'; i++)
 	{
-		if (format[i] == '%') /*if i is the same as % then verify the next char and call the function*/
+		if (format[i] == '%')  /*if i is the same as %
+								*then verify the next char and call the function
+								*/
 		{
 			result += get_print(format[i + 1], &vl);
 			i++;
