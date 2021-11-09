@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * _printf - prints different formats
+ * @format: start of the list
+ * Return: returns result
+ */
 int _printf(const char *format, ...)
 {
 	unsigned int i, result;
