@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 								*then verify the next char and call the function
 								*/
 		{
-			result += get_print(format[i + 1], vl);
+			result += get_print(format[i + 1], &vl);
 			i++;
 		}
 		else /*if not then print each char (string)*/
