@@ -19,8 +19,8 @@ int _putchar(char);/*Function that prints characters*/
 int exponent(int x, int y);/**/
 
 int mkint(va_list *vl);/**/
-int mkstring(va_list *vl);/**/
-int mkchar(va_list *vl);/**/
+int accString(va_list *vl);/**/
+int accChar(va_list *vl);/**/
 
 /**
  * struct flag - flag object
