@@ -1,10 +1,18 @@
 #include "main.h"
 
+/**
+ * get_print - connectes functions
+ * @c: string
+ * @vl: variadic list
+ * Return: returns 0
+ */
 int get_print(char c, va_list *vl)
 {
 	int i;
 
-	find_flag flags[] =  /* struct that connects to functions depending on the specifier*/
+	find_flag flags[] =    /* struct that connects to
+							*functions depending on the specifier
+							*/
 	{
 		{'c', accChar},
 		{'s', accString},
