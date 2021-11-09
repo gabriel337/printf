@@ -34,5 +34,5 @@ int accString(va_list *vl)
 
 int accChar(va_list *vl)
 {
-	return(_putchar(va_arg(*vl, int)));
+	return (_putchar(va_arg(*vl, int)));
 }

@@ -6,19 +6,20 @@ int get_print(char c, va_list *vl)
 
 	find_flag flags [] =  /* struct that connects to functions depending on the specifier*/
 	{
-		{'c', accString},
-		{'s', accChar},
+		{'c', accChar},
+		{'s', accString},
 		{'\0', NULL}
 	};
 
-	for (i = 0; flags[i] != '\0'; i++)
+	for (i = 0; flags[i].letter != '\0'; i++)
 	{
 		if (flags[i].letter == c)
 		{
 			return (flags[i].print(vl));
 		}
 	}
-	if (c == '%');
+
+	if (c == '%')
 	{
 		return (1);
 	}
