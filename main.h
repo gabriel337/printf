@@ -29,7 +29,7 @@ int _putchar(char);
 int accInt(va_list *);
 int accString(va_list *);
 int accChar(va_list *);
-
+int accPercent(va_list *vl);
 /**
  * struct flag - flag object
  * @letter: flag char

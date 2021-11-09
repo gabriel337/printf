@@ -24,3 +24,11 @@ int accInt(va_list *vl)
 {
 	return (print_int(va_arg(*vl, int)));
 }
+
+int accPercent(va_list *vl)
+{
+	(void) vl;
+
+	_putchar('%');
+	return (1);
+}

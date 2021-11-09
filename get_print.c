@@ -18,6 +18,7 @@ int get_print(char c, va_list *vl)
 		{'s', accString},
 		{'d', accInt},
 		{'i', accInt},
+		{'%', accPercent},
 		{'\0', NULL}
 	};
 
@@ -28,11 +29,7 @@ int get_print(char c, va_list *vl)
 			return (flags[i].print(vl));
 		}
 	}
-
-	if (c == '%')
-	{
-		_putchar('%');
-		return (1);
-	}
-	return (0);
+	_putchar('%');
+	_putchar(c);
+	return (2);
 }
