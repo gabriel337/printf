@@ -2,7 +2,7 @@
 
 /**
 * print_string - prints string
-* @str: string to be printed 
+* @str: string to be printed
 * Return: returns the string
 */
 int print_string(char *str)
@@ -21,7 +21,7 @@ int print_string(char *str)
  * @c: char to be printed
  * Return: if succesful 1
  */
- int _putchar(char c)
+int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
