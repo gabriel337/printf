@@ -3,7 +3,7 @@
 
 #include <stdarg.h>
 #include <stdio.h>
-#include <stdlid.h>
+#include <stdlib.h>
 #include <unistd.h>
 
 int _printf(const char *format, ...); /* the function identifies the
