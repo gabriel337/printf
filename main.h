@@ -6,26 +6,34 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-int _printf(const char *format, ...); /* the function identifies the
-                                         fist charater of the string
-                                         and send it to the correct
-                                         function to be processed */
+/**
+ * get_print - manages the start of the function look up
+ * print_string - fuction to print string
+ * p_int - funtions that prints integers
+ * _printf - printf function
+ * _putchar - funcitons that prints characters
+ * acc_string - function to acces the string
+ * accChar - function to acces the char
+ *
+ *
+ * @format: character to be evaluated
+ * Return: print different formats
+ */
 
-int get_print(char c, va_list *vl);/*manages the start of the function look up*/
+int _printf(const char *format, ...);
+int get_print(char c, va_list *vl);
 
-int print_string(char *); /* Function to print string*/
-int p_int(int); /*Function that prints integers*/
-int _putchar(char);/*Function that prints characters*/
-int exponent(int x, int y);/**/
-
-int mkint(va_list *);/**/
-int accString(va_list *);/**/
-int accChar(va_list *);/**/
+int print_string(char *);
+int p_int(int);
+int _putchar(char);
+int mkint(va_list *);
+int accString(va_list *);
+int accChar(va_list *);
 
 /**
  * struct flag - flag object
  * @letter: flag char
- * @prnt: print function pointer
+ * @print: print pointer
  */
 
 typedef struct flag
