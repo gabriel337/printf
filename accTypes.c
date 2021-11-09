@@ -42,8 +42,3 @@ int accPercent(va_list *vl)
 	_putchar('%');
 	return (1);
 }
-
-int accRev(va_list *vl)
-{
-	return (print_revstring(va_arg(*vl, char *)));
-}

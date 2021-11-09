@@ -43,7 +43,7 @@ int main(void)
 	printf("Unknown:[%r]\n");
 	len = _printf("%");
 	len2 = printf("%");
-	
+
 	printf("Length:[%d, %i]\n", len, len2);
 	return (0);
 }

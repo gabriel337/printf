@@ -18,7 +18,6 @@ int get_print(char c, va_list *vl)
 		{'s', accString},
 		{'d', accInt},
 		{'i', accInt},
-		{'r', accRev},
 		{'%', accPercent},
 		{'\0', NULL}
 	};

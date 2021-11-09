@@ -24,7 +24,6 @@ int _printf(const char *format, ...);
 int get_print(char c, va_list *vl);
 
 int print_string(char *);
-int print_revstring(char *str);
 int print_int(int);
 int _putchar(char);
 
@@ -32,7 +31,6 @@ int accInt(va_list *);
 int accString(va_list *);
 int accChar(va_list *);
 int accPercent(va_list *vl);
-int accRev(va_list *vl);
 /**
  * struct flag - flag object
  * @letter: flag char
