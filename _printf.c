@@ -30,6 +30,8 @@ int _printf(const char *format, ...)
 		}
 		else /*if not then print each char (string)*/
 		{
+			if (format[i] == '%')
+				return (-1);
 			_putchar(format[i]);
 			result++;
 		}
