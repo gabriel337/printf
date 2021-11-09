@@ -16,6 +16,12 @@ int print_string(char *str)
 	return (i);
 }
 
+int accString(va_list *vl)
+{
+	return (print_string(va_arg(*vl, char *)));
+}
+
+
 /**
  * _putchar - writes the character c to stdout
  * @c: char to be printed
@@ -24,4 +30,9 @@ int print_string(char *str)
  int _putchar(char c)
 {
 	return (write(1, &c, 1));
+}
+
+int accChar(va_list *vl)
+{
+	return(_putchar(va_arg(*vl, int)));
 }

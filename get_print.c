@@ -6,8 +6,8 @@ int get_print(char c, va_list *vl)
 
 	find_flag flags [] =  /* struct that connects to functions depending on the specifier*/
 	{
-		{'c', mkstring},
-		{'s', mkchar},
+		{'c', accString},
+		{'s', accChar},
 		{'\0', NULL}
 	};
 
