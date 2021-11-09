@@ -24,9 +24,9 @@ int _printf(const char *format, ...);
 int get_print(char c, va_list *vl);
 
 int print_string(char *);
-int p_int(int);
+int print_int(int);
 int _putchar(char);
-int mkint(va_list *);
+int accInt(va_list *);
 int accString(va_list *);
 int accChar(va_list *);
 
