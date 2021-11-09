@@ -13,14 +13,14 @@ int _printf(const char *format, ...); /* the function identifies the
 
 int get_print(char c, va_list *vl);/*manages the start of the function look up*/
 
-int print_string(char*); /* Function to print string*/
+int print_string(char *); /* Function to print string*/
 int p_int(int); /*Function that prints integers*/
 int _putchar(char);/*Function that prints characters*/
 int exponent(int x, int y);/**/
 
-int mkint(va_list *vl);/**/
-int accString(va_list *vl);/**/
-int accChar(va_list *vl);/**/
+int mkint(va_list *);/**/
+int accString(va_list *);/**/
+int accChar(va_list *);/**/
 
 /**
  * struct flag - flag object
@@ -31,7 +31,7 @@ int accChar(va_list *vl);/**/
 typedef struct flag
 {
 	char letter;
-	int (*print)(va_list);
+	int (*print)(va_list *);
 } find_flag;
 #endif/*MAIN_H*/
 
