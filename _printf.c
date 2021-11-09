@@ -7,7 +7,7 @@
  */
 int _printf(const char *format, ...)
 {
-	unsigned int i, result;
+	unsigned int i, result = 0;
 	va_list vl;
 
 	va_start(vl, format); /* pointing to format */

@@ -16,6 +16,8 @@ int get_print(char c, va_list *vl)
 	{
 		{'c', accChar},
 		{'s', accString},
+		{'d', accInt},
+		{'i', accInt},
 		{'\0', NULL}
 	};
 

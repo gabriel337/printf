@@ -20,3 +20,7 @@ int accChar(va_list *vl)
 	return (_putchar(va_arg(*vl, int)));
 }
 
+int accInt(va_list *vl)
+{
+	return (print_int(va_arg(*vl, int)));
+}
