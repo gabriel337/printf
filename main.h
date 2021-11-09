@@ -1,14 +1,17 @@
-#ifndef MAINH
-#define MAINH
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlid.h>
 #include <unistd.h>
 
-int _printf(const char *format, ...);/*the function identifies the the fist charater of the string
-										send it to the correct funciotn to be porcesed*/
-int pull_print(char c, va_list *vl);/**/
+int _printf(const char *format, ...); /* the function identifies the
+                                         fist charater of the string
+                                         and send it to the correct
+                                         function to be processed */
+
+int get_print(char c, va_list *vl);/*manages the start of the function look up*/
 
 int print_string(char*); /* Function to print string*/
 int p_int(int); /*Function that prints integers*/
@@ -25,10 +28,10 @@ int mkchar(va_list *vl);/**/
  * @prnt: print function pointer
  */
 
-typedf struct flag
+typedef struct flag
 {
 	char letter;
-	int (*prnt)(va_list);
-}find_flag;
-#endif/_MAINH*/
+	int (*print)(va_list);
+} find_flag;
+#endif/*MAIN_H*/
 

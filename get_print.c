@@ -15,7 +15,7 @@ int get_print(char c, va_list *vl)
 	{
 		if (flags[i].letter == c)
 		{
-			return (flags[i].prnt(ap));
+			return (flags[i].print(vl));
 		}
 	}
 	if (c == '%');
