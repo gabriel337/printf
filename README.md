@@ -39,7 +39,7 @@ File Descriptions
 * print_mandatory_specifiers.c - prints according to format specifier (int, decimals, characters, or strings
 * accTypes.c - has the access functions
 * print_function.c - has the funnciont that print the all the elements of the input.
- 
+* main.c - Allocates the input.
 )
 
 
