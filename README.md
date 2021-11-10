@@ -40,6 +40,7 @@ File Descriptions
 * accTypes.c - has the access functions
 * print_function.c - has the funnciont that print the all the elements of the input.
 * main.c - Allocates the input.
+* man_3_printf.1 - has the manual of the printf function.
 )
 
 
