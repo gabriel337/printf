@@ -16,10 +16,12 @@ the return is (null) and if an output error occurs, the function will return -1.
 
 Function prototype
 
-int printf(const char **format ...);
+int _printf(const char **format ...);
 
 
 Example
+
+#include "main.h"
 
 int main(void)
 {
@@ -27,6 +29,7 @@ int main(void)
 
     return (0);
 }
+
 Output
 
     Hello World!
@@ -34,14 +37,12 @@ Output
 
 File Descriptions
 
-* man_3_printf - manual for _printf.c
+* man_3_printf.1 - has the manual of the _printf function.
 * main.h - header file that contains function prototypes and structure
 * _printf.c - recieves string to print
-* print_mandatory_specifiers.c - prints according to format specifier (int, decimals, characters, or strings
+* get_print - prints according to format specifier (int, decimals, characters, or strings)
 * accTypes.c - has the access functions
-* print_function.c - has the function that print the all the elements of the input.
-* man_3_printf.1 - has the manual of the printf function.
-)
+* print_functions.c - has the function that print the all the elements of the input.
 
 Authors
 
