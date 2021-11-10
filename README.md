@@ -8,7 +8,7 @@ characters and strings onto the output screen.
 
 Returns
 
-When successfully compiled, 
+When successfully compiled,
 _printf()
  returns total amount of characters printed. If string is null,
 the return is (null) and if an output error occurs, the function will return -1.
@@ -19,16 +19,17 @@ Function prototype
 int printf(const char **format ...);
 
 
-
 Example
- 
+
 int main(void)
 {
     _printf("Hello World!");
 
     return (0);
 }
+Output
 
+    Hello World!
 
 
 File Descriptions
@@ -39,10 +40,8 @@ File Descriptions
 * print_mandatory_specifiers.c - prints according to format specifier (int, decimals, characters, or strings
 * accTypes.c - has the access functions
 * print_function.c - has the function that print the all the elements of the input.
-* main.c - Allocates the input.
 * man_3_printf.1 - has the manual of the printf function.
 )
-
 
 Authors
 

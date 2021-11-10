@@ -1,90 +1,76 @@
-.TH PRINTF 3 2021-11-9
+.TH PRINTF 3 2021-11-9 GNU
 
 .SH NAME
-	prinf
+
+_printf
 
 .SH SYNOPSIS
-	#include "main.h"
 
-	int _printf(const char *format, ...)
-	int get_print(char c, va_list *vl);
+#include "main.h"
 
-	int print_string(char *);
-	int print_int(int);
-	int _putchar(char);
+int _printf(const char *format, ...);
 
+int get_print(char c, va_list *vl);
+
+int print_string(char *);
+
+int print_int(int);
+
+int _putchar(char);
+
+.RE
 .SH DESCRIPTION
-	The current funciotn pritns:
+The current funciotn pritns:
 
-	Strings(s): are array of characters
-	Characters(c): It denotates any alphabet, digit or symbol used to represent infomration.
-	Integers(i): whole number with carious ranges.
-	Decimal Numbers(d): Numbers in decimal base.
-	%: specifiers
+.B Strings(s)
+ are array of characters
 
-Conversion specifiers
+.B Characters(c)
+ It denotates any alphabet, digit or symbol used to represent infomration.
 
-	d, i  The int argumet is converte to signed decimal notation.The precision, 
-			if any, gives the minimum number of digits that must appear, if the 
-			converted value requires fewer digits, it is padded on the left with 
-			zeros.
-	
-	c 	  The int argumet is covered to an unsigned char, and the resulting character 
-			is written.
-	
-	s 	  the const char * argument is wxpectedto be a pointer to an array of character 
-			type.
+.B Integers(i): whole number with carious ranges.
 
-	%    A '%' is written. No argument is converted. The complete conversion specification
-		is '%%'.
+.B Decimal Numbers(d): Numbers in decimal base.
+
+.B %: specifiers
+
+.SH Conversion specifiers
+.TP
+.BR \-d "," \ -i
+The int argumet is converte to signed decimal notation.The precision, if any, gives the minimum number of digits that must appear,
+if the converted value requires fewer digits, it is padded on the left with zeros.
+.TP
+.BR -c
+The int argumet is covered to an unsigned char, and the resulting character is written.
+.TP
+.BR -s
+The const char * argument is wxpectedto be a pointer to an array of character type.
+.TP
+.BR -%
+A '%' is written. No argument is converted. The complete conversion specification is '%%'.
 
 
-RETURN VALUE
+.SH RETURN VALUE
 
-	Upon succesful return, these functions returns the number of characters printed.
+Upon succesful return, these functions returns the number of characters printed.
 
-EXAMPLE
+.SH EXAMPLE
 
-	#include "main.h"
+.EX #include "main.h"
 
-int main () {
-   int ch;
+int main(void)
+{
+	char c = 'H';
+	int i = 2021;
+	char *s = "Printf Proyect";
 
-   for( ch = 75 ; ch <= 100; ch++ ) {
-      printf("ASCII value = %d, Character = %c\n", ch , ch );
-   }
-
-   return(0);
+	_printf("%colberton School, Nov 09, %d, %s\n", c, i, s);
+	return (0);
 }
+.EE
+.SH OUTPUT
 
-Output:
-
-ASCII value = 75, Character = K
-ASCII value = 76, Character = L
-ASCII value = 77, Character = M
-ASCII value = 78, Character = N
-ASCII value = 79, Character = O
-ASCII value = 80, Character = P
-ASCII value = 81, Character = Q
-ASCII value = 82, Character = R
-ASCII value = 83, Character = S
-ASCII value = 84, Character = T
-ASCII value = 85, Character = U
-ASCII value = 86, Character = V
-ASCII value = 87, Character = W
-ASCII value = 88, Character = X
-ASCII value = 89, Character = Y
-ASCII value = 90, Character = Z
-ASCII value = 91, Character = [
-ASCII value = 92, Character = \
-ASCII value = 93, Character = ]
-ASCII value = 94, Character = ^
-ASCII value = 95, Character = _
-ASCII value = 96, Character = `
-ASCII value = 97, Character = a
-ASCII value = 98, Character = b
-ASCII value = 99, Character = c
-ASCII value = 100, Character = d
+Holberton School, Nov 09, 2021, Printf Proyect
 
 .SH AUTHORS
 
