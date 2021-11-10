@@ -38,7 +38,7 @@ File Descriptions
 * _printf.c - recieves string to print
 * print_mandatory_specifiers.c - prints according to format specifier (int, decimals, characters, or strings
 * accTypes.c - has the access functions
-* print_function.c - has the funnciont that print the all the elements of the input.
+* print_function.c - has the function that print the all the elements of the input.
 * main.c - Allocates the input.
 * man_3_printf.1 - has the manual of the printf function.
 )
