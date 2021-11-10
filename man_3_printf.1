@@ -5,8 +5,11 @@
 _printf
 
 .SH SYNOPSIS
+.B Header File
 
 #include "main.h"
+
+.B Prototypes
 
 int _printf(const char *format, ...);
 
@@ -18,17 +21,31 @@ int print_int(int);
 
 int _putchar(char);
 
+int accInt(va_list *);
+
+int accString(va_list *)
+
+int accChar(va_list *);
+
+int accPercent(va_list *vl);
+
+.B Struct
+
+char letter;
+
+int (*print)(va_list *);
+
 .RE
 .SH DESCRIPTION
-The current funciotn pritns:
+The current function prints:
 
 .B Strings(s)
  are array of characters
 
 .B Characters(c)
- It denotates any alphabet, digit or symbol used to represent infomration.
+ It denotates any alphabet, digit or symbol used to represent information.
 
-.B Integers(i): whole number with carious ranges.
+.B Integers(i): whole number with various ranges.
 
 .B Decimal Numbers(d): Numbers in decimal base.
 
@@ -37,14 +54,14 @@ The current funciotn pritns:
 .SH Conversion specifiers
 .TP
 .BR \-d "," \ -i
-The int argumet is converte to signed decimal notation.The precision, if any, gives the minimum number of digits that must appear,
+The int argument is converted to signed decimal notation. The precision, if any, gives the minimum number of digits that must appear,
 if the converted value requires fewer digits, it is padded on the left with zeros.
 .TP
 .BR -c
-The int argumet is covered to an unsigned char, and the resulting character is written.
+The int argument is covered to an unsigned char, and the resulting character is written.
 .TP
 .BR -s
-The const char * argument is wxpectedto be a pointer to an array of character type.
+The const char * argument is expected to be a pointer to an array of character type.
 .TP
 .BR -%
 A '%' is written. No argument is converted. The complete conversion specification is '%%'.
